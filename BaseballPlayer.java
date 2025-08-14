@@ -17,7 +17,7 @@ public class BaseballPlayer {
 		return team;
 	}
 
-	public double getBattingAverahe() {
+	public double getBattingAverage() {
 		return battingAverage;
 	}
 
@@ -31,5 +31,9 @@ public class BaseballPlayer {
 
 	public void setBattingAverage(double avg) {
 		this.battingAverage = avg;
+	}
+
+	public String toString() {
+		return name + " (" + team + "), " + battingAverage;
 	}
 }
